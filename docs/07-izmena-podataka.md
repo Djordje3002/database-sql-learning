@@ -1,5 +1,7 @@
 # Izmena podataka bez rizika
 
+> **Srpski** · [English](en/07-changing-data.md)
+
 `INSERT` dodaje, `UPDATE` menja, a `DELETE` uklanja redove. Sve tri komande trajno menjaju podatke nakon potvrde transakcije.
 
 ## Bezbedan postupak

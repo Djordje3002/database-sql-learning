@@ -1,5 +1,7 @@
 # Osnovna pravila i sintaksa
 
+> **Srpski** · [English](en/02-core-rules.md)
+
 Najčešći oblik upita je:
 
 ```sql

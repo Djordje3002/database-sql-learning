@@ -1,5 +1,7 @@
 # Plan učenja
 
+> **Srpski** · [English](en/00-learning-path.md)
+
 ## Cilj
 
 Da samostalno pročitaš, povežeš, izmeniš i pravilno modeluješ podatke u relacionoj bazi — a zatim da razumeš kako se upit čini brzim i bezbednim.

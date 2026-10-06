@@ -1,5 +1,7 @@
 # Uslovi, operatori i NULL
 
+> **Srpski** · [English](en/03-conditions-and-null.md)
+
 `WHERE` bira redove pre prikaza ili računanja. Uslovi mogu da koriste:
 
 | Namena | Primer |

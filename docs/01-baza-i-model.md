@@ -1,5 +1,7 @@
 # Baza i model podataka
 
+> **Srpski** · [English](en/01-database-and-model.md)
+
 Relacijska baza čuva podatke u tabelama. Svaki red je jedan zapis, a svaka kolona opisuje osobinu tog zapisa.
 
 | Pojam | Značenje | Primer |

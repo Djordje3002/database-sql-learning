@@ -1,5 +1,7 @@
 # Podupiti, CTE i skupovi
 
+> **Srpski** · [English](en/06-subqueries-and-ctes.md)
+
 Podupit je `SELECT` unutar drugog upita. Koristi se kada odgovor jednog pitanja treba drugom pitanju.
 
 ```sql

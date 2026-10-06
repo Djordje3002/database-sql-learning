@@ -1,5 +1,7 @@
 # Funkcije i agregacije
 
+> **Srpski** · [English](en/04-functions-and-aggregation.md)
+
 Funkcija prima vrednost i vraća novu vrednost. Agregatna funkcija sabira više redova u jedan rezultat.
 
 ## Česte funkcije po redovima

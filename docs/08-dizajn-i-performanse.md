@@ -1,5 +1,7 @@
 # Dizajn tabela, indeksi i performanse
 
+> **Srpski** · [English](en/08-design-and-performance.md)
+
 ## Pravila dizajna
 
 - Svaka tabela ima jasan predmet: knjige nisu isto što i izdavači.

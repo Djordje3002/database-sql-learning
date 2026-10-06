@@ -1,4 +1,4 @@
--- 02: WHERE, logički operatori, opsezi, obrasci i NULL
+-- 02: Conditions and NULL / WHERE, logički operatori, opsezi, obrasci i NULL
 
 SELECT naziv, cena
 FROM knjige
@@ -17,7 +17,7 @@ SELECT naziv
 FROM knjige
 WHERE naziv LIKE 'H%';
 
--- IS NULL, a ne: email = NULL
+-- Use IS NULL, not email = NULL / IS NULL, a ne: email = NULL
 SELECT ime, grad
 FROM kupci
 WHERE email IS NULL;

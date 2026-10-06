@@ -1,6 +1,6 @@
--- 06: INSERT, UPDATE, DELETE i transakcije
--- Ova datoteka je vežba: pokreći blokove jedan po jedan.
--- ROLLBACK vraća promene, pa baza ostaje ista.
+-- 06: INSERT, UPDATE, DELETE, and transactions / i transakcije
+-- This is a lab: run one block at a time / Ova datoteka je vežba: pokreći blokove jedan po jedan.
+-- ROLLBACK reverts changes, so the base stays unchanged / ROLLBACK vraća promene, pa baza ostaje ista.
 
 BEGIN;
 
@@ -11,7 +11,7 @@ UPDATE knjige
 SET cena = cena * 1.05
 WHERE id_izdavaca = 2;
 
--- Uvek proveri pre brisanja.
+-- Always inspect rows before deleting / Uvek proveri pre brisanja.
 SELECT *
 FROM izdavaci
 WHERE id = 5;
@@ -19,5 +19,5 @@ WHERE id = 5;
 DELETE FROM izdavaci
 WHERE id = 5;
 
--- Za vežbu poništi sve izmene iz ovog bloka.
+-- Revert all changes from this lab block / Za vežbu poništi sve izmene iz ovog bloka.
 ROLLBACK;

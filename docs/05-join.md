@@ -1,5 +1,7 @@
 # JOIN: spajanje tabela
 
+> **Srpski** · [English](en/05-joins.md)
+
 `JOIN` povezuje redove iz dve tabele preko zajedničke vrednosti, najčešće primarnog i stranog ključa.
 
 ```sql

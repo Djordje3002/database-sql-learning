@@ -1,5 +1,5 @@
--- Pokreni ovu datoteku prvu. Namenjena je SQLite-u.
--- U drugim bazama osnovni model je isti, ali se sintaksa za automatski ID može razlikovati.
+-- Run this file first / Pokreni ovu datoteku prvu. It targets SQLite / Namenjena je SQLite-u.
+-- The model is portable, but automatic-ID syntax differs across databases / Model je prenosiv, ali se sintaksa za automatski ID razlikuje.
 
 PRAGMA foreign_keys = ON;
 

@@ -1,0 +1,23 @@
+name: Validate SQL examples
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sqlite:
+    name: Run foundation lessons in SQLite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Show SQLite version
+        run: sqlite3 --version
+
+      - name: Validate runnable examples
+        run: bash scripts/validate-sql.sh

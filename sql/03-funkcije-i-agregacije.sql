@@ -1,4 +1,4 @@
--- 03: Funkcije po redovima, CASE i agregacije
+-- 03: Scalar functions, CASE, and aggregation / Funkcije po redovima, CASE i agregacije
 
 SELECT naziv,
        UPPER(naziv) AS naziv_velikim_slovima,
