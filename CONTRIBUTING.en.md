@@ -22,6 +22,8 @@ Before creating a file, review the current [learning path](docs/en/00-learning-p
 | backup, migrations, or a production procedure | `operations/` |
 | an interview question or time-boxed SQL challenge | `interviews/` |
 | a changed table relationship | `diagrams/` and the affected project ER diagram |
+| a KPI, cohort, data-quality check, or warehouse model | `analytics/` |
+| an executable check, fixture, or SQL review rule | `testing/` |
 
 Do not add a new lesson when the same topic is already covered. Instead:
 

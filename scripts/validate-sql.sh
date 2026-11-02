@@ -8,7 +8,8 @@ set -euo pipefail
 foundation_database="$(mktemp "${TMPDIR:-/tmp}/database-sql-foundation.XXXXXX.db")"
 advanced_database="$(mktemp "${TMPDIR:-/tmp}/database-sql-advanced.XXXXXX.db")"
 practice_database="$(mktemp "${TMPDIR:-/tmp}/database-sql-practice.XXXXXX.db")"
-trap 'rm -f "$foundation_database" "$advanced_database" "$practice_database"' EXIT
+analytics_database="$(mktemp "${TMPDIR:-/tmp}/database-sql-analytics.XXXXXX.db")"
+trap 'rm -f "$foundation_database" "$advanced_database" "$practice_database" "$analytics_database"' EXIT
 
 sqlite3 "$foundation_database" < sql/00-priprema-baze.sql
 
@@ -47,4 +48,18 @@ done
 sqlite3 "$foundation_database" < interviews/sql/interview-answers.sql > /dev/null
 printf '✓ interviews reference answers\n'
 
-printf 'All SQLite-first foundation, advanced, practice, and interview examples passed.\n'
+sqlite3 "$analytics_database" < analytics/sql/00-analytics-setup.sql
+
+for lesson in analytics/sql/[0-9][0-9]-*.sql; do
+  if [[ "$lesson" == "analytics/sql/00-analytics-setup.sql" ]]; then
+    continue
+  fi
+
+  sqlite3 "$analytics_database" < "$lesson" > /dev/null
+  printf '✓ %s\n' "$lesson"
+done
+
+bash testing/run-sqlite-checks.sh > /dev/null
+printf '✓ testing SQLite assertions\n'
+
+printf 'All SQLite-first foundation, advanced, practice, interview, analytics, and testing examples passed.\n'

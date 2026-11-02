@@ -22,6 +22,8 @@ Pre nego što napraviš datoteku, prođi kroz trenutni [plan učenja](docs/00-pl
 | backup, migracije ili produkcioni postupak | `operations/` |
 | intervju pitanje ili vremenski SQL izazov | `interviews/` |
 | promenu odnosa tabela | `diagrams/` i odgovarajući projektni ER dijagram |
+| KPI, kohortu, data-quality proveru ili warehouse model | `analytics/` |
+| izvršivu proveru, fixture ili SQL review pravilo | `testing/` |
 
 Ne dodaj novu lekciju ako je ista tema već obrađena. Umesto toga:
 

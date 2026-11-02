@@ -69,6 +69,11 @@ The [operations runbooks](operations/README.md) cover backup/restore drills, RPO
 - [SQL Interview Lab](interviews/README.md): theory prompts, time-boxed challenges, and reference answers.
 - [ER diagrams](diagrams/README.md): a rendered bookstore model plus versioned diagrams inside each capstone brief.
 
+### Analytics and testing
+
+- [Analytics and Data Engineering Track](analytics/README.md): fact/dimension modeling, KPI contracts, cohorts, retention, and data-quality checks.
+- [Database Testing and Review Track](testing/README.md): executable assertions, fixtures, migration testing, and a structured SQL review checklist.
+
 ## What you will be able to do
 
 - Write correct, readable queries across multiple related tables.
@@ -91,6 +96,8 @@ operations/    Backup, migrations, and deployment runbooks
 capstones/     Portfolio-grade database projects
 interviews/    Interview questions and SQL challenges
 diagrams/      ER diagrams and relationship documentation
+analytics/     Warehouse thinking, KPIs, cohorts, and quality checks
+testing/       Executable database checks and review guidance
 resources/     Reference material and cheat sheets
 assets/        Original course visuals
 ```

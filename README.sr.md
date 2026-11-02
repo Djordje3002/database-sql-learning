@@ -69,6 +69,11 @@ Zatim nalepi upit iz `sql/` datoteka u SQLite konzolu.
 - [SQL intervju laboratorija](interviews/README.sr.md): teorijska pitanja, izazovi sa vremenom i referentni odgovori.
 - [ER dijagrami](diagrams/README.sr.md): renderovan model knjižare i verzionisani dijagrami u svakom projektnom brief-u.
 
+### Analitika i testiranje
+
+- [Analitika i data engineering staza](analytics/README.sr.md): fact/dimension model, KPI ugovori, kohorte, retencija i provere kvaliteta podataka.
+- [Staza za testiranje i review baza](testing/README.sr.md): izvršive asercije, fixture-i, testiranje migracija i strukturisana kontrolna lista SQL review-a.
+
 ## Šta ćeš znati
 
 - Da napišeš ispravne, čitljive upite nad povezanim tabelama.
@@ -91,6 +96,8 @@ operations/    Backup, migracije i deployment vodiči
 capstones/     Portfolio projekti za baze
 interviews/    Intervju pitanja i SQL izazovi
 diagrams/      ER dijagrami i dokumentacija odnosa
+analytics/     Warehouse pristup, KPI, kohorte i provere kvaliteta
+testing/       Izvršive provere baze i review vodiči
 resources/     Referentni materijal i cheat sheet
 assets/        Originalni vizuali kursa
 ```
