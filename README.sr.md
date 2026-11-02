@@ -54,6 +54,21 @@ Zatim nalepi upit iz `sql/` datoteka u SQLite konzolu.
 
 [Praktikum](practice/README.md) sadrži projekte i zadatke rastuće težine. Prvo rešavaš realan problem iz izveštavanja, kvaliteta podataka ili analitike, pa tek onda čitaš rešenje.
 
+### Specijalizacije za baze
+
+- [PostgreSQL staza](specializations/postgresql/README.sr.md): funkcije i procedure, `JSONB`, RLS, full-text pretraga i performanse zasnovane na dokazu.
+- [MySQL 8 staza](specializations/mysql/README.sr.md): InnoDB, generisane kolone, JSON, stored programi i MySQL trade-off-ovi indeksa.
+
+### Produkcione operacije
+
+[Operativni vodiči](operations/README.sr.md) pokrivaju backup/restore vežbe, RPO/RTO, verzionisane migracije, kompatibilan deployment i rollback plan.
+
+### Portfolio i priprema za intervju
+
+- [Četiri portfolio projekta](capstones/README.sr.md): webshop, univerzitetski upis, bankarski ledger i dostupnost rezervacija.
+- [SQL intervju laboratorija](interviews/README.sr.md): teorijska pitanja, izazovi sa vremenom i referentni odgovori.
+- [ER dijagrami](diagrams/README.sr.md): renderovan model knjižare i verzionisani dijagrami u svakom projektnom brief-u.
+
 ## Šta ćeš znati
 
 - Da napišeš ispravne, čitljive upite nad povezanim tabelama.
@@ -71,6 +86,11 @@ docs/en/       Teorija osnova na engleskom
 sql/           Zajednički, izvršivi SQLite-first primeri
 advanced/      Advanced kurs: teorija i laboratorijske vežbe
 practice/      Projektni zadaci, izazovi i rešenja
+specializations/ PostgreSQL i MySQL staze
+operations/    Backup, migracije i deployment vodiči
+capstones/     Portfolio projekti za baze
+interviews/    Intervju pitanja i SQL izazovi
+diagrams/      ER dijagrami i dokumentacija odnosa
 resources/     Referentni materijal i cheat sheet
 assets/        Originalni vizuali kursa
 ```

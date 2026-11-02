@@ -17,6 +17,11 @@ Pre nego što napraviš datoteku, prođi kroz trenutni [plan učenja](docs/00-pl
 | brzi podsetnik koji važi kroz više lekcija | `resources/` |
 | zadatak za samostalno rešavanje | postojeći `practice/` format, kada je prisutan |
 | složeniju temu ili projekat | postojeći `advanced/` format, kada je prisutan |
+| PostgreSQL ili MySQL specifičan sadržaj | odgovarajuća staza u `specializations/` |
+| veliki portfolio scenario | `capstones/` sa šemom, ER dijagramom i kriterijumima |
+| backup, migracije ili produkcioni postupak | `operations/` |
+| intervju pitanje ili vremenski SQL izazov | `interviews/` |
+| promenu odnosa tabela | `diagrams/` i odgovarajući projektni ER dijagram |
 
 Ne dodaj novu lekciju ako je ista tema već obrađena. Umesto toga:
 

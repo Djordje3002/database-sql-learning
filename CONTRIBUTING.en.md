@@ -17,6 +17,11 @@ Before creating a file, review the current [learning path](docs/en/00-learning-p
 | a concise reminder used across several lessons | `resources/` |
 | an exercise for independent practice | the established `practice/` format, when present |
 | a more complex topic or project | the established `advanced/` format, when present |
+| PostgreSQL- or MySQL-specific material | the matching track in `specializations/` |
+| a large portfolio scenario | `capstones/` with a schema, ER diagram, and acceptance criteria |
+| backup, migrations, or a production procedure | `operations/` |
+| an interview question or time-boxed SQL challenge | `interviews/` |
+| a changed table relationship | `diagrams/` and the affected project ER diagram |
 
 Do not add a new lesson when the same topic is already covered. Instead:
 

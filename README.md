@@ -54,6 +54,21 @@ The [Advanced Database Course](advanced/en/README.md) turns fundamentals into pr
 
 The [practice studio](practice/en/README.md) contains progressively harder briefs that ask you to solve real reporting, data-quality, and analytics problems before reading a solution.
 
+### Database specializations
+
+- [PostgreSQL Track](specializations/postgresql/README.md): functions and procedures, `JSONB`, RLS, full-text search, and evidence-based performance work.
+- [MySQL 8 Track](specializations/mysql/README.md): InnoDB, generated columns, JSON, stored programs, and MySQL-specific indexing trade-offs.
+
+### Production operations
+
+The [operations runbooks](operations/README.md) cover backup/restore drills, RPO/RTO, versioned migrations, deployment compatibility, and rollback planning.
+
+### Portfolio and interview preparation
+
+- [Four portfolio capstones](capstones/README.md): webshop, university enrollment, banking ledger, and booking availability.
+- [SQL Interview Lab](interviews/README.md): theory prompts, time-boxed challenges, and reference answers.
+- [ER diagrams](diagrams/README.md): a rendered bookstore model plus versioned diagrams inside each capstone brief.
+
 ## What you will be able to do
 
 - Write correct, readable queries across multiple related tables.
@@ -71,6 +86,11 @@ docs/en/       English foundation theory
 sql/           Shared, runnable SQLite-first examples
 advanced/      Advanced course, theory and labs
 practice/      Project briefs, challenges, and solutions
+specializations/ PostgreSQL and MySQL tracks
+operations/    Backup, migrations, and deployment runbooks
+capstones/     Portfolio-grade database projects
+interviews/    Interview questions and SQL challenges
+diagrams/      ER diagrams and relationship documentation
 resources/     Reference material and cheat sheets
 assets/        Original course visuals
 ```

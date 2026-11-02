@@ -44,4 +44,7 @@ for project in 01-biblioteka-operacije 02-prodaja-izvestavanje 03-analitika-kval
   printf '✓ practice/%s reference solution\n' "$project"
 done
 
-printf 'All SQLite-first foundation, advanced, and practice examples passed.\n'
+sqlite3 "$foundation_database" < interviews/sql/interview-answers.sql > /dev/null
+printf '✓ interviews reference answers\n'
+
+printf 'All SQLite-first foundation, advanced, practice, and interview examples passed.\n'

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title description">
+  <title id="title">Bookstore entity relationship diagram</title>
+  <desc id="description">Publishers, books, authors, customers, orders, and order lines with their key relationships.</desc>
+  <defs>
+    <style>
+      .bg { fill: #081426; }
+      .card { fill: #102542; stroke: #38bdf8; stroke-width: 2; rx: 12; }
+      .head { fill: #1d4ed8; rx: 10; }
+      .t { font-family: Arial, sans-serif; fill: #e0f2fe; font-size: 21px; font-weight: 700; }
+      .c { font-family: Arial, sans-serif; fill: #bae6fd; font-size: 16px; }
+      .key { fill: #fbbf24; font-weight: 700; }
+      .line { stroke: #7dd3fc; stroke-width: 3; fill: none; }
+      .label { font-family: Arial, sans-serif; fill: #c4b5fd; font-size: 16px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="820" rx="24"/>
+  <text x="700" y="52" text-anchor="middle" class="t" font-size="30">Bookstore ER Diagram / ER dijagram knjižare</text>
+
+  <path class="line" d="M300 205 H375"/><text class="label" x="323" y="192">1 : N</text>
+  <path class="line" d="M680 265 V355 H520 V410"/><text class="label" x="610" y="344">N : M</text>
+  <path class="line" d="M740 265 V355 H930 V410"/>
+  <path class="line" d="M310 600 H495"/><text class="label" x="382" y="586">1 : N</text>
+  <path class="line" d="M780 600 H955"/><text class="label" x="851" y="586">1 : N</text>
+  <path class="line" d="M1090 520 V345 H1010 V265"/><text class="label" x="1106" y="387">N : 1</text>
+
+  <g transform="translate(70 115)">
+    <rect class="card" width="230" height="180"/><rect class="head" width="230" height="46"/>
+    <text class="t" x="18" y="30">izdavaci</text>
+    <text class="c key" x="18" y="78">PK  id</text><text class="c" x="18" y="108">naziv</text><text class="c" x="18" y="138">grad</text><text class="c" x="18" y="168">godina_osnivanja</text>
+  </g>
+  <g transform="translate(375 115)">
+    <rect class="card" width="305" height="220"/><rect class="head" width="305" height="46"/>
+    <text class="t" x="18" y="30">knjige</text>
+    <text class="c key" x="18" y="78">PK  id_knjige</text><text class="c" x="18" y="108">naziv</text><text class="c" x="18" y="138">cena</text><text class="c" x="18" y="168">godina_izdanja</text><text class="c key" x="18" y="198">FK  id_izdavaca</text>
+  </g>
+  <g transform="translate(740 115)">
+    <rect class="card" width="270" height="180"/><rect class="head" width="270" height="46"/>
+    <text class="t" x="18" y="30">autori</text>
+    <text class="c key" x="18" y="78">PK  id</text><text class="c" x="18" y="108">ime</text><text class="c" x="18" y="138">prezime</text><text class="c" x="18" y="168">godina_rodjenja</text>
+  </g>
+  <g transform="translate(410 410)">
+    <rect class="card" width="240" height="130"/><rect class="head" width="240" height="46"/>
+    <text class="t" x="18" y="30">knjige_autori</text>
+    <text class="c key" x="18" y="78">PK/FK id_knjige</text><text class="c key" x="18" y="108">PK/FK id_autora</text>
+  </g>
+  <g transform="translate(70 510)">
+    <rect class="card" width="240" height="175"/><rect class="head" width="240" height="46"/>
+    <text class="t" x="18" y="30">kupci</text>
+    <text class="c key" x="18" y="78">PK  id</text><text class="c" x="18" y="108">ime</text><text class="c" x="18" y="138">email</text><text class="c" x="18" y="168">grad</text>
+  </g>
+  <g transform="translate(495 510)">
+    <rect class="card" width="285" height="180"/><rect class="head" width="285" height="46"/>
+    <text class="t" x="18" y="30">narudzbine</text>
+    <text class="c key" x="18" y="78">PK  id</text><text class="c key" x="18" y="108">FK  id_kupca</text><text class="c" x="18" y="138">datum</text><text class="c" x="18" y="168">status</text>
+  </g>
+  <g transform="translate(955 455)">
+    <rect class="card" width="330" height="220"/><rect class="head" width="330" height="46"/>
+    <text class="t" x="18" y="30">stavke_narudzbine</text>
+    <text class="c key" x="18" y="78">PK/FK id_narudzbine</text><text class="c key" x="18" y="108">PK/FK id_knjige</text><text class="c" x="18" y="138">kolicina</text><text class="c" x="18" y="168">cena_u_trenutku</text>
+  </g>
+</svg>
